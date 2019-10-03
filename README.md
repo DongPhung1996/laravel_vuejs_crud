@@ -27,4 +27,5 @@ STEP 2: Install Vue dependency:
 
 STEP 3: Run project:
 - php artisan config:cache
+- php artisan migrate
 - php artisan serve
