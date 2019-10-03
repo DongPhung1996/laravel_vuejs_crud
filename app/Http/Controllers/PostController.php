@@ -13,7 +13,7 @@ class PostController extends Controller
     public function store(Request $request)
     {
       $post = new Post([
-        'sku' => $request->get('sku'),
+        'sku' => strtoupper($request->get('sku')),
         'name' => $request->get('name'),
         'description' => $request->get('description'),
         'price' => $request->get('price')
@@ -25,6 +25,11 @@ class PostController extends Controller
     }
 
     public function index()
+    {
+      return new PostCollection(Post::all());
+    }
+
+    public function home()
     {
       return new PostCollection(Post::all());
     }
