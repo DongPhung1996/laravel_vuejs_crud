@@ -1795,18 +1795,15 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     addPost: function addPost() {
-      console.log(this.post);
-    }
-  },
-  addPost: function addPost() {
-    var _this = this;
+      var _this = this;
 
-    var uri = 'http://localhost:8000/api/post/create';
-    this.axios.post(uri, this.post).then(function (response) {
-      _this.$router.push({
-        name: 'posts'
+      var uri = 'http://localhost:8000/api/post/create';
+      this.axios.post(uri, this.post).then(function (response) {
+        _this.$router.push({
+          name: 'posts'
+        });
       });
-    });
+    }
   }
 });
 
@@ -38155,7 +38152,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "number", min: "0", max: "100" },
+                attrs: { type: "number", min: "0" },
                 domProps: { value: _vm.post.price },
                 on: {
                   input: function($event) {
@@ -38435,7 +38432,7 @@ var render = function() {
               staticClass: "btn btn-primary",
               attrs: { to: { name: "create" } }
             },
-            [_vm._v("Create Post")]
+            [_vm._v("Create Product")]
           )
         ],
         1

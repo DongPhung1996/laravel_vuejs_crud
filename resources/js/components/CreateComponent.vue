@@ -32,7 +32,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Price:</label>
-              <input type="number" class="form-control" v-model="post.price" min="0" max="100"/>
+              <input type="number" class="form-control" v-model="post.price" min="0" />
             </div>
           </div>
         </div>
@@ -52,15 +52,11 @@
     },
     methods: {
       addPost(){
-        console.log(this.post);
-      }
-    },
-
-    addPost(){
         let uri = 'http://localhost:8000/api/post/create';
         this.axios.post(uri, this.post).then((response) => {
            this.$router.push({name: 'posts'});
         });
-    }
+      }
+    },
   }
 </script>
