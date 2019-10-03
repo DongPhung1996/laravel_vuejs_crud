@@ -32,12 +32,12 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Price:</label>
-              <input type="number" class="form-control" v-model="post.price" min="0" max="100"/>
+              <input type="number" class="form-control" v-model="post.price" min="0" />
             </div>
           </div>
         </div>
         <div class="form-group">
-          <button class="btn btn-primary">Create</button>
+          <button class="btn btn-primary">Edit</button>
         </div>
     </form>
   </div>

@@ -38348,7 +38348,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "number", min: "0", max: "100" },
+                attrs: { type: "number", min: "0" },
                 domProps: { value: _vm.post.price },
                 on: {
                   input: function($event) {
@@ -38374,7 +38374,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "form-group" }, [
-      _c("button", { staticClass: "btn btn-primary" }, [_vm._v("Create")])
+      _c("button", { staticClass: "btn btn-primary" }, [_vm._v("Edit")])
     ])
   }
 ]
