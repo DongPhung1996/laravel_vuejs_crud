@@ -24,7 +24,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Description:</label>
-              <textarea class="form-control" v-model="post.description" rows="3" maxlength="300"></textarea>
+              <textarea class="form-control" v-model="post.description" rows="3"></textarea>
             </div>
           </div>
         </div>

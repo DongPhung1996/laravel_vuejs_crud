@@ -38318,7 +38318,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { rows: "3", maxlength: "300" },
+                attrs: { rows: "3" },
                 domProps: { value: _vm.post.description },
                 on: {
                   input: function($event) {
