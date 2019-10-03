@@ -30,7 +30,7 @@
                     <td>{{ post.description }}</td>
                     <td>{{ post.price }}</td>
                     <td><router-link :to="{name: 'edit', params: { id: post.id }}" class="btn btn-primary">Edit</router-link></td>
-                    <td><button class="btn btn-danger"  @click.prevent="deletePost(post.id)">Delete</button></td>
+                    <td><button class="btn btn-danger" @click.prevent="deletePost(post.id)">Delete</button></td>
                 </tr>
             </tbody>
         </table>
