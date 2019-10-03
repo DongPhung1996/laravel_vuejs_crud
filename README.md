@@ -17,8 +17,10 @@ DB_USERNAME=root
 DB_PASSWORD=root
 - the compiling assets using command line:
 npm run watch
+
 STEP 2: Install Vue dependency:
 npm install vue-router vue-axios --save
+
 STEP 3: Run project:
 php artisan config:cache
 php artisan serve
