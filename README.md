@@ -4,7 +4,7 @@ Create page crud product using laravel and vue js
 STEP 1: Creat project laravel:
 
 Install laravel 5.7:
-- composer create-project --prefer-dist laravel/laravel blog "5.7.*"
+- composer create-project --prefer-dist laravel/laravel laravel_vuejs_crud "5.7.*"
  
 Install front end:
 - npm install
